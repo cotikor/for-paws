@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { TabDiv, TabPar } from "../../styles/tabs";
 
-const Tab = (props) => {
-	//STATE
+const Tab = ({ selectedTab, id, setSelected, setActiveImage }) => {
 	return (
 		<TabDiv
-			selectedTab={props.selectedTab}
+			selectedTab={selectedTab}
 			onClick={(e) => {
 				e.preventDefault();
-				props.setSelected(props.id);
+				setSelected(id);
+				setActiveImage(0);
 			}}
 		>
-			<TabPar>{props.id}</TabPar>
+			<TabPar>{id}</TabPar>
 		</TabDiv>
 	);
 };

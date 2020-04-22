@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import Tab from "./Tab";
 import { TabsSection } from "../../styles/tabs";
 
-export const Tabs = (props) => {
-	const tabLabels = ["Mercury","Venus", "Mars", "Jupiter"];
-
+export const Tabs = ({
+	tabLabels,
+	selectedTab,
+	setSelected,
+	setActiveImage,
+}) => {
 	return (
 		<TabsSection>
 			{tabLabels.map((tab, index) => {
@@ -12,8 +15,9 @@ export const Tabs = (props) => {
 					<Tab
 						key={index}
 						id={tab}
-						selectedTab={props.selectedTab === tab ? true : false}
-						setSelected={props.setSelected}
+						selectedTab={selectedTab === tab ? true : false}
+						setSelected={setSelected}
+						setActiveImage={setActiveImage}
 					/>
 				);
 			})}
