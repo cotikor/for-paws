@@ -23,13 +23,11 @@ export const TabDiv = styled.div`
 	background: ${(props) =>
 		props.selectedTab ? "rgba(0,0,0,.9)" : "rgba(76, 36, 59, 0.9)"};
 	z-index: ${(props) => (props.selectedTab ? 20 : "inherit")};
-	font-weight: ${props => props.selectedTab ? "bold": "300"};
-
-	`;
+	font-weight: ${(props) => (props.selectedTab ? "bold" : "300")};
+`;
 
 export const TabPar = styled.p`
 	font-size: 1rem;
 	color: #ffffff;
 	font-style: italic;
-
-`
+`;

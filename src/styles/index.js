@@ -1,12 +1,11 @@
 import styled, { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import background from "./app-background.jpg";
+import background from "./assets/app-background.jpg";
 
 //font-family: 'Bangers', cursive;
 
 export const GlobalStyle = createGlobalStyle`
 ${reset}
-@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
 *{
   box-sizing: border-box;
@@ -43,7 +42,7 @@ p {
 }
 `;
 
-export const AppContainer = styled.div`
+export const AppContainer = styled.main`
 	position: fixed;
 	top: 10%;
 	bottom: 0;
@@ -55,9 +54,7 @@ export const AppContainer = styled.div`
 	margin: 0;
 `;
 
-
-
-export const HomeDiv = styled.div`
+export const HomeContainer = styled.section`
 	position: fixed;
 	top: 15%;
 	bottom: 5%;
@@ -68,4 +65,3 @@ export const HomeDiv = styled.div`
 	align-items: flex-start;
 	border-radius: 10px;
 `;
- 
