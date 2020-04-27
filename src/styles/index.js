@@ -34,11 +34,11 @@ body {
     background-size: cover;
 }
 
-a {
+h1 {
 	font-family: 'Bangers', cursive;
 }
 
-p {
+p, li {
 	font-family: 'Montserrat', sans-serif;
 }
 `;

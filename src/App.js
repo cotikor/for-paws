@@ -13,8 +13,7 @@ const App = (props) => {
 			<MainNav />
 			<AppContainer>
 				<Switch>
-					<Route exact path="/" component={Home} />
-					<Route exact path="/carousel" component={Carousel} />
+					<Route exact path="/adopt" component={Home} />
 				</Switch>
 			</AppContainer>
 		</>
