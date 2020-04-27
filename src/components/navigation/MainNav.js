@@ -6,7 +6,7 @@ export const MainNav = (props) => {
 	return (
 		<NavBar>
 				<StyledNavLink to="/">
-					Space-cation
+					Rocky Mountain Humane Society
 				</StyledNavLink>
 		</NavBar>
 	);

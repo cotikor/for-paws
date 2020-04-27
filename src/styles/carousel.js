@@ -3,7 +3,7 @@ import buttonLogo from "./assets/logo.png";
 
 export const CarouselContainer = styled.section`
 	position: relative;
-	height: 30%;
+	height: 70%;
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
@@ -14,7 +14,7 @@ export const ImageContainer = styled.div`
     display: ${(props) => (props.active ? "block" : "none")};
     width: 100%;
     background-image: url('${(props) => props.image}');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 `;
@@ -31,9 +31,8 @@ export const CarouselButton = styled.button`
 		props.direction === "left" ? "rotate(-90deg)" : "rotate(90deg)"};
 	justify-content: center;
 	background: none;
-	border-radius: 50%;
 	cursor: pointer;
-	border: 1px solid white;
+	border: none;
 	background-image: url(${buttonLogo});
 	align-items: center;
 	&:hover {

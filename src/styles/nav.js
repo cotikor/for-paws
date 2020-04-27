@@ -8,8 +8,8 @@ export const NavBar = styled.nav`
 	height: 40px;
 	z-index: 100;
 	margin-bottom: 20%;
-	background-color: rgba(76, 36, 59, 0.9);
-	justify-content: space-between;
+	background-color: rgba(18, 28, 50, 0.9);
+	justify-content: center;
 	align-items: center;
 	box-shadow: 0px 0px 50px 5px;
 `;

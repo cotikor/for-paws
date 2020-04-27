@@ -11,24 +11,16 @@ export const ContentContainer = styled.section`
 	background: rgba(0, 0, 0, 0.8);
 `;
 
-export const DetailsContainer = styled.section`
-display:flex;
-flex-flow: column nowrap;
-height: 70%;
+
+
+export const DescriptionP = styled.p`
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2.5%;
+height: 30%;
 border: 1px solid white;
 width: 100%;
 `
 
-export const DescriptionP = styled.p`
-color: white;
-height: 50%;
-border: 1px solid red;
-display: flex;
-align-items: center;
-`
-
-export const WeatherContainer = styled.div`
-border: 1px solid red;
-height: 50%;
-
-`
