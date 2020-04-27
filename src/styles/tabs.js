@@ -12,19 +12,19 @@ export const TabsSection = styled.section`
 `;
 
 export const TabDiv = styled.div`
-	display: flex;
-	justify-content: center;
-	border-radius: inherit;
-	align-items: center;
-	width: calc(100% / 4);
-	cursor: pointer;
-	font-weight: bold;
-	text-align: center;
-	background: ${(props) =>
-		props.selectedTab ? "rgba(0,0,0,.9)" : "rgba(76, 36, 59, 0.9)"};
-	z-index: ${(props) => (props.selectedTab ? 20 : "inherit")};
-	font-weight: ${(props) => (props.selectedTab ? "bold" : "300")};
-`;
+					display: flex;
+					justify-content: center;
+					border-radius: inherit;
+					align-items: center;
+					width: calc(100% / 4);
+					cursor: pointer;
+					font-weight: bold;
+					text-align: center;
+					background: ${(props) =>
+						props.selectedTab ? "rgba(100,100,100,.9)" : "rgba(18, 28, 50, 0.9)"};
+					z-index: ${(props) => (props.selectedTab ? 20 : "inherit")};
+					font-weight: ${(props) => (props.selectedTab ? "bold" : "300")};
+				`;
 
 export const TabPar = styled.p`
 	font-size: 1rem;

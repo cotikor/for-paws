@@ -3,6 +3,7 @@ import reset from "styled-reset";
 import background from "./assets/app-background.jpg";
 
 //font-family: 'Bangers', cursive;
+//Colors: #4F5D75, #121C32, #646464, #FFFFFF
 
 export const GlobalStyle = createGlobalStyle`
 ${reset}

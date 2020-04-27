@@ -5,8 +5,8 @@ import { Content } from "../components/dashboard/Content";
 
 export const Home = (props) => {
 	const [activeImage, setActiveImage] = useState(0);
-	const tabLabels = ["Mercury", "Venus", "Mars", "Jupiter"];
-	const [selectedTab, setSelected] = useState("Mercury");
+	const tabLabels = ["Diamond", "Onyx", "Sapphire", "Sarina", "Sarabi"];
+	const [selectedTab, setSelected] = useState("Diamond");
 
 	return (
 		<>
