@@ -12,9 +12,9 @@ export const CarouselContainer = styled.section`
 
 export const ImageContainer = styled.div`
     display: ${(props) => (props.active ? "block" : "none")};
-    width: 100%;
+	width: 100%;
     background-image: url('${(props) => props.image}');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 `;
@@ -22,18 +22,21 @@ export const ImageContainer = styled.div`
 export const CarouselButton = styled.button`
 	display: flex;
 	position: absolute;
-	top: 50%;
-	right: ${(props) => (props.direction === "right" ? "25px" : "null")};
-	left: ${(props) => (props.direction === "left" ? "25px" : "null")};
-	height: 25px;
-	width: 25px;
+	bottom: 10px;
+	right: ${(props) => (props.direction === "right" ? "10px" : "null")};
+	left: ${(props) => (props.direction === "left" ? "10px" : "null")};
+	height: 32px;
+	width: 32px;
 	transform: ${(props) =>
 		props.direction === "left" ? "rotate(-90deg)" : "rotate(90deg)"};
 	justify-content: center;
-	background: none;
 	cursor: pointer;
-	border: none;
+	background-color: rgb(18, 28, 50);
+	border: 1px solid white;
+	border-radius: 50%;
 	background-image: url(${buttonLogo});
+	background-position: center;
+	background-repeat: no-repeat;
 	align-items: center;
 	&:hover {
 		transform: ${(props) =>
@@ -59,9 +62,10 @@ export const CarouselPaginationContainer = styled.div`
 `;
 
 export const CarouselPaginationDots = styled.span`
-	padding: 4px;
-	margin-right: 5px;
-	cursor: pointer;
-	border-radius: 50%;
-	background: ${(props) => (props.active ? "rgb(76, 36, 59)" : "white")};
-`;
+					padding: 4px;
+					margin-right: 5px;
+					cursor: pointer;
+					border-radius: 50%;
+					background: ${(props) =>
+						props.active ? "rgb(18, 28, 50)" : "white"};
+				`;
