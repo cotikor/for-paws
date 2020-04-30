@@ -5,12 +5,11 @@ import { Forms } from "./pages/Forms";
 import { MainNav } from "./components/navigation/MainNav";
 import { GlobalStyle, AppContainer } from "./styles";
 
-
 const App = (props) => {
-	const [view, setView] = useState('adopt');
-		const [activeImage, setActiveImage] = useState(0);
-		const tabLabels = ["Diamond", "Onyx", "Sapphire", "Sarina", "Sarabi"];
-		const [selectedTab, setSelected] = useState("Diamond");
+	const [view, setView] = useState("adopt");
+	const [activeImage, setActiveImage] = useState(0);
+	const tabLabels = ["Diamond", "Onyx", "Sapphire", "Sarina", "Sarabi"];
+	const [selectedTab, setSelected] = useState("Diamond");
 
 	return (
 		<>
@@ -45,4 +44,3 @@ const App = (props) => {
 };
 
 export default withRouter(App);
-
