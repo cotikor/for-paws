@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-
 export const ContentContainer = styled.section`
 	display: flex;
 	box-shadow: 0px 0px 50px 5px;
@@ -34,5 +33,7 @@ export const DescriptionP = styled.p`
 `;
 
 export const AdoptButton = styled(NavLink)`
-					width: 30%;
-				`;
+	color: white;
+	text-decoration: none;
+	font-size: 1.6rem;
+`;

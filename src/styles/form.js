@@ -17,12 +17,13 @@ export const FormHeading = styled.h1`
 	text-align: center;
 	background-color: white;
 	font-size: 2.4rem;
+	margin-bottom: 2.5%;
 `;
 export const FormSubHeading = styled.h2`
 	color: white;
 	font-size: 1.4rem;
 	width: 100%;
-	text-align: Center;
+	text-align: center;
 `;
 export const FormSection = styled.section`
 	display: ${props => props.view === 'adopt' ? 'none': 'flex'};

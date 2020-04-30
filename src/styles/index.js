@@ -34,7 +34,7 @@ body {
     background-size: cover;
 }
 
-h1 {
+h1, a {
 	font-family: 'Bangers', cursive;
 }
 

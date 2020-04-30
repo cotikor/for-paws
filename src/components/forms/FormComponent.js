@@ -16,11 +16,21 @@ import {
 	FormSubmitButton,
 } from "../../styles/form";
 
-export const FormComponent = ({ view }) => {
+export const FormComponent = ({ view, name }) => {
 
 	return (
 		<FormContainer>
-			<FormHeading>{view === 'adopt' ? 'Adoption': 'Foster'} Application</FormHeading>
+			<FormHeading>
+				{view === "adopt" ? "Adoption" : "Foster"} Application
+			</FormHeading>
+			<span style={{display:`${view === 'adopt' ? 'block': 'none'}` }}>
+				<FormSection>
+					<FormLabel>Pet Name</FormLabel>
+					<FormInputContainer>
+						<FormShortInput type="text" value={name}></FormShortInput>
+					</FormInputContainer>
+				</FormSection>
+			</span>
 			<FormSection>
 				<FormLabel>Full Name</FormLabel>
 				<FormInputContainer>
@@ -374,7 +384,7 @@ export const FormComponent = ({ view }) => {
 					<FormLongInput cols="40" rows="6"></FormLongInput>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					How many hours in a day would the foster be left alone?{" "}
 				</FormLabel>
