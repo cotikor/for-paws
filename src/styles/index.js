@@ -34,11 +34,11 @@ body {
     background-size: cover;
 }
 
-h1 {
+h1, a {
 	font-family: 'Bangers', cursive;
 }
 
-p, li {
+p, li, input, textarea, label, h2, button {
 	font-family: 'Montserrat', sans-serif;
 }
 `;
@@ -57,7 +57,7 @@ export const AppContainer = styled.main`
 
 export const HomeContainer = styled.section`
 	position: fixed;
-	top: 15%;
+	top: 10%;
 	bottom: 5%;
 	left: 5%;
 	right: 5%;

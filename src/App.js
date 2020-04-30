@@ -1,20 +1,43 @@
 import React, { useState } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
-import { Home } from "./pages/Adopt";
-import { FosterForm } from "./components/forms/FosterForm";
+import { Adopt } from "./pages/Adopt";
+import { Forms } from "./pages/Forms";
 import { MainNav } from "./components/navigation/MainNav";
 import { GlobalStyle, AppContainer } from "./styles";
 
 
 const App = (props) => {
+	const [view, setView] = useState('adopt');
+		const [activeImage, setActiveImage] = useState(0);
+		const tabLabels = ["Diamond", "Onyx", "Sapphire", "Sarina", "Sarabi"];
+		const [selectedTab, setSelected] = useState("Diamond");
+
 	return (
 		<>
 			<GlobalStyle />
-			<MainNav />
+			<MainNav setView={setView} />
 			<AppContainer>
 				<Switch>
-					<Route exact path="/adopt" component={Home} />
-					<Route path={"/foster"} component={FosterForm} />
+					<Route
+						exact
+						path="/adopt"
+						render={(props) => (
+							<Adopt
+								setView={setView}
+								activeImage={activeImage}
+								setActiveImage={setActiveImage}
+								tabLabels={tabLabels}
+								setSelected={setSelected}
+								selectedTab={selectedTab}
+							/>
+						)}
+					/>
+					<Route path={"/foster"} render={(props) => <Forms view={view} />} />
+					<Route
+						exact
+						path={"/adopt/application"}
+						render={(props) => <Forms view={view} name={selectedTab} />}
+					/>
 				</Switch>
 			</AppContainer>
 		</>
