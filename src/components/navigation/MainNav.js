@@ -3,7 +3,7 @@ import {NavList} from './NavList';
 import { NavBar, StyledNavLink, NavMenuIcon, NavH1 } from "../../styles/nav";
 
 
-export const MainNav = (props) => {
+export const MainNav = ({setView}) => {
 	const [open, setMenuOpen] = useState(false);
 	return (
 		<>
@@ -18,7 +18,7 @@ export const MainNav = (props) => {
 				}}
 			></NavMenuIcon>
 			</NavBar>
-			<NavList open={open}/>
+			<NavList open={open} setView={setView}/>
 			</>
 	);
 };

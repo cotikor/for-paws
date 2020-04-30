@@ -16,9 +16,11 @@ import {
 	FormSubmitButton,
 } from "../../styles/form";
 
-export const FosterForm = (props) => {
+export const FormComponent = ({ view }) => {
+
 	return (
 		<FormContainer>
+			<FormHeading>{view === 'adopt' ? 'Adoption': 'Foster'} Application</FormHeading>
 			<FormSection>
 				<FormLabel>Full Name</FormLabel>
 				<FormInputContainer>
@@ -110,7 +112,7 @@ export const FosterForm = (props) => {
 				</FormInputContainer>
 			</FormSection>
 			<FormSection>
-				<FormLabel></FormLabel>
+				<FormLabel>Household Setting</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
 						<FormRadioInput type="radio"></FormRadioInput>
@@ -158,7 +160,7 @@ export const FosterForm = (props) => {
 					</FormRadioContainer>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					Do all members of your household agree to fostering?
 				</FormLabel>
@@ -182,7 +184,7 @@ export const FosterForm = (props) => {
 					<FormLongInput cols="40" rows="6"></FormLongInput>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>Do you have a preference in the sex of a foster? </FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
@@ -199,7 +201,7 @@ export const FosterForm = (props) => {
 					</FormRadioContainer>
 				</FormInputContainer>{" "}
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>Do you have a preference in the age of a foster? </FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
@@ -220,7 +222,7 @@ export const FosterForm = (props) => {
 					</FormRadioContainer>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					What size dog are you willing to foster? (Check all that apply){" "}
 				</FormLabel>
@@ -239,7 +241,7 @@ export const FosterForm = (props) => {
 					</FormRadioContainer>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					Please describe the type of dog you are willing to foster (Please
 					include breed, coat length, personality traits, energy level) We
@@ -249,7 +251,7 @@ export const FosterForm = (props) => {
 					<FormLongInput cols="40" rows="6"></FormLongInput>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					Are you willing to take your foster dog to vet appointments at a
 					convenient time for you?{" "}
@@ -265,7 +267,7 @@ export const FosterForm = (props) => {
 					</FormRadioContainer>
 				</FormInputContainer>{" "}
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					Do you drive or have access to a vehicle to bring your foster to
 					events and appointments
@@ -281,7 +283,7 @@ export const FosterForm = (props) => {
 					</FormRadioContainer>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					Are you willing and able to medicate your foster, even if it just a
 					monthly heartworm preventative?
@@ -313,7 +315,7 @@ export const FosterForm = (props) => {
 					</FormRadioContainer>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					Have you had any experience with with an emotionally or physically
 					neglected or abused dog?
@@ -329,13 +331,13 @@ export const FosterForm = (props) => {
 					</FormRadioContainer>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>If Yes please explain</FormLabel>
 				<FormInputContainer>
 					<FormLongInput cols="40" rows="6"></FormLongInput>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					Are you willing to use a crate for a dog if recommended?{" "}
 				</FormLabel>
@@ -380,7 +382,7 @@ export const FosterForm = (props) => {
 					<FormShortInput type="text"></FormShortInput>
 				</FormInputContainer>
 			</FormSection>
-			<FormSection>
+			<FormSection view={view}>
 				<FormLabel>
 					What are you plans to exercise your foster? Please list any parks near
 					by or trails, how many walks a day, approximate length, and activities
@@ -476,7 +478,7 @@ export const FosterForm = (props) => {
 				</FormInputContainer>
 			</FormSection>
 
-			<FormSubmitButton></FormSubmitButton>
+			<FormSubmitButton>Submit</FormSubmitButton>
 		</FormContainer>
 	);
 };

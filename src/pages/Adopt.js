@@ -3,7 +3,7 @@ import { HomeContainer } from "../styles";
 import { Tabs } from "../components/dashboard/Tabs";
 import { Content } from "../components/dashboard/Content";
 
-export const Home = (props) => {
+export const Adopt = ({ setView }) => {
 	const [activeImage, setActiveImage] = useState(0);
 	const tabLabels = ["Diamond", "Onyx", "Sapphire", "Sarina", "Sarabi"];
 	const [selectedTab, setSelected] = useState("Diamond");
@@ -18,6 +18,7 @@ export const Home = (props) => {
 					setActiveImage={setActiveImage}
 				/>
 				<Content
+					setView={setView}
 					selectedTab={selectedTab}
 					activeImage={activeImage}
 					setActiveImage={setActiveImage}

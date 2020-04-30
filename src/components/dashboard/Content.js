@@ -1,10 +1,14 @@
 import React from "react";
 import { Carousel } from "./carousel/Carousel";
-import { ContentContainer, DescriptionP } from "../../styles/content";
-import axios from "axios";
+import {
+	ContentContainer,
+	DescriptionP,
+	AdoptButton,
+	BottomContent,
+} from "../../styles/content";
 import * as photos from "../../styles/assets/images/index";
 
-export const Content = ({ selectedTab, activeImage, setActiveImage }) => {
+export const Content = ({ selectedTab, activeImage, setActiveImage, setView }) => {
 	const images = {
 		Diamond: [photos.diamond1, photos.diamond2, photos.diamond3],
 		Onyx: [photos.onyx1, photos.onyx2, photos.onyx3],
@@ -27,7 +31,6 @@ export const Content = ({ selectedTab, activeImage, setActiveImage }) => {
 	};
 
 	return (
-		console.log(images.Diamond),
 		(
 			<ContentContainer>
 				<Carousel
@@ -35,7 +38,10 @@ export const Content = ({ selectedTab, activeImage, setActiveImage }) => {
 					activeImage={activeImage}
 					setActiveImage={setActiveImage}
 				/>
-				<DescriptionP>{descriptions[selectedTab]}</DescriptionP>
+				<BottomContent>
+					<DescriptionP>{descriptions[selectedTab]}</DescriptionP>
+					<AdoptButton to='/adopt/application' onClick={e => { setView('adopt')}}>Adopt</AdoptButton>
+				</BottomContent>
 			</ContentContainer>
 		)
 	);
