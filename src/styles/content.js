@@ -7,6 +7,7 @@ export const ContentContainer = styled.section`
 	flex-flow: column nowrap;
 	align-items: center;
 	height: 100%;
+	max-width: 400px;
 	width: 100%;
 	background: rgba(18, 28, 50, 0.8);
 	position: relative;

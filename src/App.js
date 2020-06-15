@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { Adopt } from "./pages/Adopt";
 import { Forms } from "./pages/Forms";
+import { Landing } from "./pages/Landing";
 import { MainNav } from "./components/navigation/MainNav";
 import { GlobalStyle, AppContainer } from "./styles";
 
@@ -17,6 +18,8 @@ const App = (props) => {
 			<MainNav setView={setView} />
 			<AppContainer>
 				<Switch>
+				<Route exact path={"/"} render={(props) => <Landing {...props} />} />
+
 					<Route
 						exact
 						path="/adopt"

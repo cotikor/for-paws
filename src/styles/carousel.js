@@ -5,6 +5,7 @@ export const CarouselContainer = styled.section`
 	position: relative;
 	height: 70%;
 	width: 100%;
+	background: rgba(100,100,100,.25);
 	margin: 0 auto;
 	overflow: hidden;
 	display: flex;
@@ -13,8 +14,9 @@ export const CarouselContainer = styled.section`
 export const ImageContainer = styled.div`
     display: ${(props) => (props.active ? "block" : "none")};
 	width: 100%;
+	height: auto;
     background-image: url('${(props) => props.image}');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
 `;
@@ -23,8 +25,8 @@ export const CarouselButton = styled.button`
 	display: flex;
 	position: absolute;
 	bottom: 10px;
-	right: ${(props) => (props.direction === "right" ? "10px" : "null")};
-	left: ${(props) => (props.direction === "left" ? "10px" : "null")};
+	right: ${(props) => (props.direction === "right" ? "1px" : "null")};
+	left: ${(props) => (props.direction === "left" ? "1px" : "null")};
 	height: 32px;
 	width: 32px;
 	transform: ${(props) =>

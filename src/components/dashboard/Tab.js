@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { TabDiv, TabPar } from "../../styles/tabs";
 
 const Tab = ({ selectedTab, id, setSelected, setActiveImage }) => {

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { CarouselContainer, CarouselButton } from "../../../styles/carousel";
 import PaginationDisplay from "./PaginationDisplay";
 import Image from "./Image";
-import axios from "axios";
 
 export const Carousel = ({ images, activeImage, setActiveImage }) => {
 	return (

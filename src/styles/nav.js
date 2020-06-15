@@ -5,6 +5,10 @@ import menuOpen from "./assets/menu-open.png";
 import menuClose from "./assets/menu-close.png";
 
 export const NavBar = styled.nav`
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
 	padding: 1%;
@@ -41,7 +45,12 @@ export const NavMenuIcon = styled.span`
 
 export const NavUl = styled.ul`
 	border-bottom: 1px solid white;
+	z-index: 100;
+	position:fixed;
+	top: 40px;
+	right: 0;
 	height: 20px;
+	width: 100%;
 	display: ${(props) => (props.open ? "flex" : "none")};
 	flex-flow: row nowrap;
 	justify-content: space-around;

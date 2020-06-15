@@ -22,12 +22,13 @@ html{
 	font-size: 62.5%;
 }
 body {
-
 	margin: 0;
 	padding: 0;
-     min-height: 100%;
+    min-height: 100%;
     display: flex;
-    flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
     background-image: url(${background});
     background-repeat: no-repeat;
     background-position: center;
@@ -44,12 +45,13 @@ p, li, input, textarea, label, h2, button {
 `;
 
 export const AppContainer = styled.main`
-	position: fixed;
-	top: 10%;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	// position: fixed;
+	// top: 10%;
+	// bottom: 0;
+	// left: 0;
+	// right: 0;
 	display: flex;
+	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	margin: 0;
@@ -63,6 +65,7 @@ export const HomeContainer = styled.section`
 	right: 5%;
 	display: flex;
 	flex-flow: column nowrap;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: center;
 	border-radius: 10px;
 `;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { HomeContainer } from "../styles";
 import { Tabs } from "../components/dashboard/Tabs";
 import { Content } from "../components/dashboard/Content";

@@ -9,7 +9,7 @@ export const MainNav = ({setView}) => {
 		<>
 		<NavBar>
 			<StyledNavLink to="/"></StyledNavLink>
-			<NavH1>Rocky Mountain Humane Society</NavH1>
+			<NavH1>For Paws Humane Society</NavH1>
 			<NavMenuIcon
 				open={open}
 				onClick={(e) => {
