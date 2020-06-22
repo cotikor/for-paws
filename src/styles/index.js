@@ -28,11 +28,12 @@ body {
     display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
+	overflow-y: hidden;
 	align-items: center;
     background-image: url(${background});
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 h1, a {
@@ -45,16 +46,12 @@ p, li, input, textarea, label, h2, button {
 `;
 
 export const AppContainer = styled.main`
-	// position: fixed;
-	// top: 10%;
-	// bottom: 0;
-	// left: 0;
-	// right: 0;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	margin: 0;
+	height: 100vh;
 `;
 
 export const HomeContainer = styled.section`

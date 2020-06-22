@@ -3,22 +3,22 @@ import buttonLogo from "./assets/logo.png";
 
 export const CarouselContainer = styled.section`
 	position: relative;
-	height: 70%;
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 	background: rgba(100,100,100,.25);
 	margin: 0 auto;
 	overflow: hidden;
 	display: flex;
+	@media only screen and (orientation: landscape) and (max-height: 760px){
+		height: 100%;
+		max-width: 40%;
+	}
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.img`
     display: ${(props) => (props.active ? "block" : "none")};
-	width: 100%;
+	max-width: 100%;
 	height: auto;
-    background-image: url('${(props) => props.image}');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
 `;
 
 export const CarouselButton = styled.button`
@@ -64,10 +64,10 @@ export const CarouselPaginationContainer = styled.div`
 `;
 
 export const CarouselPaginationDots = styled.span`
-					padding: 4px;
-					margin-right: 5px;
-					cursor: pointer;
-					border-radius: 50%;
-					background: ${(props) =>
-						props.active ? "rgb(18, 28, 50)" : "white"};
-				`;
+	padding: 4px;
+	margin-right: 5px;
+	cursor: pointer;
+	border-radius: 50%;
+	background: ${(props) =>
+		props.active ? "rgb(18, 28, 50)" : "white"};
+`;

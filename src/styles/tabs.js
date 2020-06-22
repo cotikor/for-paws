@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 export const TabsSection = styled.section`
-	height: 60px;
+	min-height: 30px;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	background: none;
-	max-width: 400px;
+	max-width: 600px;
 	width: 100%;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	@media only screen and (orientation: landscape) and (max-height: 760px) {
+		height: 10%;
+	}
 `;
 
 export const TabDiv = styled.div`
@@ -17,7 +20,7 @@ export const TabDiv = styled.div`
 	justify-content: center;
 	border-radius: inherit;
 	align-items: center;
-	width: calc(100% / 4);
+	width: calc(100% / 5);
 	cursor: pointer;
 	font-weight: bold;
 	text-align: center;
