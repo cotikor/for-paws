@@ -25,7 +25,8 @@ body {
 	margin: 0;
 	padding: 0;
     min-height: 100%;
-    display: flex;
+	display: flex;
+	font-family: 'Montserrat',sans-serif;
 	flex-flow: column nowrap;
 	justify-content: center;
 	overflow-y: hidden;

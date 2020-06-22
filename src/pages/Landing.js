@@ -7,8 +7,7 @@ export const Landing = (props) => {
 	return (
 		<LandingContainer>
 			<Jumbotron history={props.history}/>
-			<LandingBottom />
-
+			<LandingBottom setView={props.setView}/>
 		</LandingContainer>
 	);
 };

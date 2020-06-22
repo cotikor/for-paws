@@ -91,15 +91,15 @@ export const FormComponent = ({ view, name }) => {
 				<FormLabel>Do you:</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='housetype' type="radio"></FormRadioInput>
 						<FormSubLabel>Own</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='housetype' type="radio"></FormRadioInput>
 						<FormSubLabel>Rent Alone</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='housetype' type="radio"></FormRadioInput>
 						<FormSubLabel>Rent With Roommates</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -125,15 +125,15 @@ export const FormComponent = ({ view, name }) => {
 				<FormLabel>Household Setting</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='setting' type="radio"></FormRadioInput>
 						<FormSubLabel>Rural</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='setting' type="radio"></FormRadioInput>
 						<FormSubLabel>Suburban</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='setting' type="radio"></FormRadioInput>
 						<FormSubLabel>Urban</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -142,15 +142,15 @@ export const FormComponent = ({ view, name }) => {
 				<FormLabel>Describe your home's activity level</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='activity' type="radio"></FormRadioInput>
 						<FormSubLabel>Busy/Noisy</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='activity' type="radio"></FormRadioInput>
 						<FormSubLabel>Moderate Activity</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='activity' type="radio"></FormRadioInput>
 						<FormSubLabel>Quiet</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -161,11 +161,11 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='allergies' type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='allergies' type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -176,11 +176,11 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='agree'  type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='agree' type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -198,36 +198,36 @@ export const FormComponent = ({ view, name }) => {
 				<FormLabel>Do you have a preference in the sex of a foster? </FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='sex'  type="radio"></FormRadioInput>
 						<FormSubLabel>Male</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='sex'  type="radio"></FormRadioInput>
 						<FormSubLabel>Female</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='sex'  type="radio"></FormRadioInput>
 						<FormSubLabel>No Preference</FormSubLabel>
 					</FormRadioContainer>
-				</FormInputContainer>{" "}
+				</FormInputContainer>
 			</FormSection>
 			<FormSection view={view}>
 				<FormLabel>Do you have a preference in the age of a foster? </FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='age'  type="radio"></FormRadioInput>
 						<FormSubLabel>Puppy (up to 6 months)</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='age'   type="radio"></FormRadioInput>
 						<FormSubLabel>Adolescence (6 months - 2 years)</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='age'   type="radio"></FormRadioInput>
 						<FormSubLabel>Adult (2 years - 8 years)</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='age'  type="radio"></FormRadioInput>
 						<FormSubLabel>Senior (8+ years)</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -238,15 +238,15 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='size'  type="radio"></FormRadioInput>
 						<FormSubLabel>Small</FormSubLabel>
 					</FormRadioContainer>{" "}
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='size' type="radio"></FormRadioInput>
 						<FormSubLabel>Medium</FormSubLabel>
 					</FormRadioContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='size' type="radio"></FormRadioInput>
 						<FormSubLabel>Large</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -268,11 +268,11 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='vet' type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>{" "}
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='vet' type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>{" "}
@@ -284,11 +284,11 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='transport' type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>{" "}
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='transport' type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -300,11 +300,11 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='medication' type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>{" "}
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='medication' type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -316,11 +316,11 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='housebroken' type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>{" "}
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='housebroken' type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -332,11 +332,11 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='experience' type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>{" "}
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='experience' type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -353,11 +353,11 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='crate' type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>{" "}
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='crate'  type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -366,11 +366,11 @@ export const FormComponent = ({ view, name }) => {
 				<FormLabel>Do you have a fully fenced yard? </FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput  name='yard' type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>{" "}
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='yard' type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -410,11 +410,11 @@ export const FormComponent = ({ view, name }) => {
 				</FormLabel>
 				<FormInputContainer>
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='references' type="radio"></FormRadioInput>
 						<FormSubLabel>Yes</FormSubLabel>
 					</FormRadioContainer>{" "}
 					<FormRadioContainer>
-						<FormRadioInput type="radio"></FormRadioInput>
+						<FormRadioInput name='references' type="radio"></FormRadioInput>
 						<FormSubLabel>No</FormSubLabel>
 					</FormRadioContainer>
 				</FormInputContainer>
@@ -487,8 +487,7 @@ export const FormComponent = ({ view, name }) => {
 					<FormShortInput type="text"></FormShortInput>
 				</FormInputContainer>
 			</FormSection>
-
-			<FormSubmitButton>Submit</FormSubmitButton>
+			<FormSubmitButton to='/foster/submit'>Submit</FormSubmitButton>
 		</FormContainer>
 	);
 };
