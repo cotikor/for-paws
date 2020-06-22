@@ -5,14 +5,14 @@ import spotlight from '../../styles/assets/spotlight.jpg'
 import { BottomContainer, ButtonContainer, BottomButton, LandingH2, SpotlightContainer, DetailsContainer, SpotlightImg, SpotlightP } from '../../styles/landing'
 
 
-export const LandingBottom = (props) => {
+export const LandingBottom = ({setView}) => {
 	return (
 		<BottomContainer>
 			<DetailsContainer direction='left'>
 			<LandingH2>Room For One More?</LandingH2>
 			<ButtonContainer>
 				<BottomButton to='/adopt' image={cat}>Adopt</BottomButton>
-				<BottomButton to='/foster' image={dog}>Foster</BottomButton>
+				<BottomButton to='/foster' image={dog} onClick={e => { setView('foster')}}>Foster</BottomButton>
 			</ButtonContainer>
 			</DetailsContainer>
 			<DetailsContainer direction='right'>

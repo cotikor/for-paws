@@ -5,9 +5,10 @@ import { Forms } from "./pages/Forms";
 import { Landing } from "./pages/Landing";
 import { MainNav } from "./components/navigation/MainNav";
 import { GlobalStyle, AppContainer } from "./styles";
+import { FormModal } from "./components/forms/FormModal";
 
 const App = (props) => {
-	const [view, setView] = useState("adopt");
+	const [view, setView] = useState("foster");
 	const [activeImage, setActiveImage] = useState(0);
 	const tabLabels = ["Diamond", "Onyx", "Sapphire", "Sarina", "Sarabi"];
 	const [selectedTab, setSelected] = useState("Diamond");
@@ -18,7 +19,7 @@ const App = (props) => {
 			<MainNav setView={setView} />
 			<AppContainer>
 				<Switch>
-				<Route exact path={"/"} render={(props) => <Landing {...props} />} />
+				<Route exact path={"/"} render={(props) => <Landing {...props} setView={setView} />} />
 
 					<Route
 						exact
@@ -34,7 +35,8 @@ const App = (props) => {
 							/>
 						)}
 					/>
-					<Route path={"/foster"} render={(props) => <Forms view={view} />} />
+					<Route exact path={"/foster"} render={(props) => <Forms view={view} />} /> 
+					<Route exact path={"/foster/submit"} render={(props) => <FormModal />} /> 
 					<Route
 						exact
 						path={"/adopt/application"}
