@@ -1,19 +1,26 @@
 import styled from "styled-components";
 
 export const FormContainer = styled.form`
-	max-width:600px;
+	box-shadow: 0px 0px 50px 5px;
+	width: 90vw;
+	max-width: 800px;
+	max-height: 85vh;
 	position: relative;
-	max-height:80vh;
 	border: 1px solid white;
 	overflow-y: scroll;
+	overflow-x: hidden;
 	background: rgba(18, 28, 50, 0.8);
+	@media only screen and (orientation: landscape){
+		max-height: 70vh;
+	}
 `;
 
 export const FormHeading = styled.h1`
 	color: #121c32;
-	max-width: 600px;
-	width: 100%;
-	position: fixed;
+	width: 90vw;
+	max-width: 800px;
+	position:sticky;
+	top:0;
 	text-align: center;
 	background-color: white;
 	font-size: 2.4rem;

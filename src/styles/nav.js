@@ -49,13 +49,13 @@ export const NavUl = styled.ul`
 	position:fixed;
 	top: 40px;
 	right: 0;
-	height: 20px;
+	height: 60px;
 	width: 100%;
 	display: ${(props) => (props.open ? "flex" : "none")};
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgba(100, 100, 100, 0.7);
+	background-color: rgb(100, 100, 100);
 `;
 
 export const NavLi = styled.li`
