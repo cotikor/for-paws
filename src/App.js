@@ -3,6 +3,7 @@ import { Switch, Route, withRouter } from "react-router-dom";
 import { Adopt } from "./pages/Adopt";
 import { Forms } from "./pages/Forms";
 import { Landing } from "./pages/Landing";
+import { Donate } from "./pages/Donate";
 import { MainNav } from "./components/navigation/MainNav";
 import { GlobalStyle, AppContainer } from "./styles";
 import { FormModal } from "./components/forms/FormModal";
@@ -19,8 +20,7 @@ const App = (props) => {
 			<MainNav setView={setView} />
 			<AppContainer>
 				<Switch>
-				<Route exact path={"/"} render={(props) => <Landing {...props} setView={setView} />} />
-
+					<Route exact path={"/"} render={(props) => <Landing {...props} setView={setView} />} />
 					<Route
 						exact
 						path="/adopt"
@@ -35,8 +35,9 @@ const App = (props) => {
 							/>
 						)}
 					/>
-					<Route exact path={"/foster"} render={(props) => <Forms view={view} />} /> 
-					<Route exact path={"/foster/submit"} render={(props) => <FormModal />} /> 
+					<Route exact path={"/foster"} render={(props) => <Forms view={view} />} />
+					<Route exact path={"/donate"} render={(props) => <Donate />} />
+					<Route exact path={"/foster/submit"} render={(props) => <FormModal />} />
 					<Route
 						exact
 						path={"/adopt/application"}
