@@ -7,8 +7,8 @@ export const ContentContainer = styled.section`
 	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: flex-end;
-	max-width: 600px;
-	max-height:85vh;
+	max-width: 500px;
+	max-height: 80vh;
 	background: rgba(18, 28, 50, 0.8);
 	@media only screen and (orientation: landscape) and (max-height: 760px){
 		flex-flow: row nowrap;
@@ -28,7 +28,7 @@ export const BottomContent = styled.div`
 	justify-content: flex-start;
 	width: 100%;
 	height: 30%;
-	overflow: scroll;
+	overflow-y: scroll;
 	@media only screen and (orientation: landscape) and (max-height: 760px){
 		width: 70%;
 		height: 100%;

@@ -6,7 +6,7 @@ export const TabsSection = styled.section`
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	background: none;
-	max-width: 600px;
+	max-width: 500px;
 	width: 100%;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;

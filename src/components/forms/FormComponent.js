@@ -16,7 +16,7 @@ import {
 	FormSubmitButton,
 } from "../../styles/form";
 
-export const FormComponent = ({ view, name }) => {
+export const FormComponent = ({ view, name, setMode }) => {
 
 	return (
 		<FormContainer>
@@ -487,7 +487,7 @@ export const FormComponent = ({ view, name }) => {
 					<FormShortInput type="text"></FormShortInput>
 				</FormInputContainer>
 			</FormSection>
-			<FormSubmitButton to='/foster/submit'>Submit</FormSubmitButton>
+			<FormSubmitButton onClick={ e=> {setMode('application')}}>Submit</FormSubmitButton>
 		</FormContainer>
 	);
 };
