@@ -8,7 +8,7 @@ export const ContentContainer = styled.section`
 	align-items: center;
 	justify-content: flex-end;
 	max-width: 500px;
-	max-height: 85vh;
+	max-height: 80vh;
 	background: rgba(18, 28, 50, 0.8);
 	@media only screen and (orientation: landscape) and (max-height: 760px){
 		flex-flow: row nowrap;
