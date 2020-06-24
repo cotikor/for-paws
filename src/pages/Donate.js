@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import StripeCheckout from 'react-stripe-checkout'
+import React from "react";
+import {DonateComponent} from '../components/donate/DonateComponent'
+import { FormModal } from "../components/forms/FormModal";
 
-export const Donate = (props) => {
-    const handleToken = (token, address) => {
-        console.log(token, address)
-    }
-	return (
-        console.log(process.env.REACT_APP_STRIPE_KEY),
-        <div>
-            <StripeCheckout stripeKey={process.env.REACT_APP_STRIPE_KEY}
-            token={handleToken}
-             />
-        </div>
-	);
+export const Donate = ({view, name, mode, setMode}) => {
+
+if(mode === 'donation'){
+    return(
+        <FormModal mode={mode} setMode={setMode}/>
+    );
+} else {
+    return (
+        <DonateComponent setMode={setMode} view={view} name={name}/>
+    	);
+}
 };

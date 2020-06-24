@@ -92,7 +92,7 @@ export const FormSubLabel = styled.label`
 	margin: 1% 0 2.5%;
 `;
 
-export const FormSubmitButton = styled(NavLink)`
+export const FormSubmitButton = styled.button`
 	width: 100%;
 	display: block;
 	text-align: center;

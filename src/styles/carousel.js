@@ -2,6 +2,10 @@ import styled from "styled-components";
 import buttonLogo from "./assets/logo.png";
 
 export const CarouselContainer = styled.section`
+@media only screen and (orientation: landscape) and (max-height: 760px){
+	height: 100%;
+	max-width: 40%;
+}
 	position: relative;
 	max-width: 100%;
 	height: auto;
@@ -9,10 +13,7 @@ export const CarouselContainer = styled.section`
 	margin: 0 auto;
 	overflow: hidden;
 	display: flex;
-	@media only screen and (orientation: landscape) and (max-height: 760px){
-		height: 100%;
-		max-width: 40%;
-	}
+
 `;
 
 export const ImageContainer = styled.img`
