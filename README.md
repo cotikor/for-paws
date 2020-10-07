@@ -1,7 +1,10 @@
-For Paws
+# For Paws
 
-A humane society website
-Tech Stack
+*A humane society website*
 
-    React
-    Styled Components
+---
+
+## Tech Stack
+
+- React
+- Styled Components
